@@ -1,0 +1,59 @@
+Cálculos que debe realizar el programa:
+
+Determinar el máximo entre 2 números
+def max2(c,d): 
+c=input("ingrese primera variable") d=input("ingrese segunda variable") if c > d: print (c,"es mayor que ",d) elif b > a: print (d,"es mayor que ",c) else: 
+print (c, "y" ,d, "son iguales") return 
+
+Determinar el máximo entre 3 números
+def max3(c,d,e): 
+c=input("ingrese primera variable") d=input("ingrese segunda variable") e=input("ingrese tercer variable") if c > d and c > e and d != e: 
+print (c,"es mayor que ",d, "y" ,e) if d > c and d > e and c != e: 
+print (d,"es mayor que ",c, "y" ,e) elif e > c and e > d and c != d: 
+print (e, "es mayor que " ,c, "y" ,d) else: 
+print ("ERROR! LOS NUMEROS DEBEN SER DISTINTOS") return 
+
+Determinar el largo de una lista (no vale usar la funcion len())
+          def lista(cantidad): 
+cantidad=input("ingresa lista") total=0 for x in cantidad: total += 1 print (total) return 
+
+Determinar si un caracter ingresado es vocal o consonante
+c=input("ingresa un Letra minuscula") if c== 'a' or c=='e' or c=='i' or c=='o' or c== 'u': 
+print (c,"Es vocal") else: 
+print (c,"Es consonante") return 
+
+Realizar la suma de los elementos de una lista
+  def sumalista(lis): 
+lis=input("ingrese lista") laSuma = 0 for i in lis: 
+laSuma = laSuma + i return laSuma 
+
+Realizar la multiplicación de los elementos de una lista
+prod=input("ingrese lista ") mul = 1 for i in prod: 
+mul = mul * i return mul 
+
+      Hacer un branch para agregar esta funcionalidad:
+Verificar si las 2 listas tienen algún elemento en común
+git checkout -b compararlista pluma compararlista.py def ComparLista(a,b): 
+a=input (‘ingresa primera lista ‘) b=input (‘ingresa segunda lista ‘) comparacion = [item for item in a if item in b] if len(comparacion) > 0: 
+print ‘Ambas listas contienen estos elementos ‘ for item in comparacion: print '%s' % item else: 
+print ‘No existe ningun elemento igual en las listas’ git add comparalista.py git commit -m
+
+
+Hacer otro branch para agregar esta funcionalidad:
+Verificar si una palabra ingresada es un palíndromo
+
+git checkout -b palindromo pluma palindromo.py 
+ def Palindromo(p): 
+p = raw_input(‘Ingresar Palabra ‘) if p==p [::-1]: 
+print ‘Es Palindromo’ else: 
+print ‘No es palindromo’ git add palindromo.py git commit -m 
+
+
+
+Hacer un merge con la rama principal
+
+git push origin comparalista git checkout master git merge comparalista --allow-unrelated-histories git push origin master 
+git push origin palindromo git checkout master git merge palindromo git push origin master 
+
+#Cree el repositorio, pero no logré que compilara de la terminal al repositorio de github,para que se transcriba el código, lo configure,pero no anduvo 
+
